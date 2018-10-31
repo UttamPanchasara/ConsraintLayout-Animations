@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Animations</string>
+    <string name="thank_you">Thank You!!</string>
+    <string name="recipe_description">This recipe is very versatile and heavily addictive. You can mix and match cake
+        and icing flavors as well as the chocolate coatings. The variations are unlimited, and they can be nicely
+        packaged and given as gifts.
+    </string>
+    <string name="recipe_name">Cake Balls</string>
+    <string name="tap_to_view_detail">Tap to view detail</string>
+    <string name="click_me">Click Me</string>
+    <string name="animation_1">Animation 1</string>
+    <string name="animation_2">Animation 2</string>
+</resources>

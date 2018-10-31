@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+            android:scaleType="centerCrop"
+            android:contentDescription="@null"
+            android:id="@+id/ivPoster"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/halloween"
+            android:layout_width="match_parent"
+            app:layout_constraintBottom_toTopOf="@+id/txtDescription"
+            android:layout_height="0dp"/>
+    <TextView
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline"
+            android:id="@+id/txtName"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:background="#BB000000"
+            android:text="@string/recipe_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+    <ImageButton
+            android:id="@+id/btnClose"
+            android:contentDescription="@null"
+            android:layout_margin="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/txtName"
+            app:layout_constraintTop_toTopOf="@+id/txtName"
+            android:background="@android:color/transparent"
+            android:src="@android:drawable/ic_menu_close_clear_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <TextView
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:padding="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:id="@+id/txtDescription"
+            android:background="@color/white"
+            android:text="@string/recipe_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <TextView
+            android:gravity="center"
+            android:textSize="18sp"
+            android:padding="15dp"
+            android:visibility="gone"
+            android:textStyle="bold"
+            android:id="@+id/txtTapToView"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:text="@string/tap_to_view_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <android.support.constraint.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/guideline"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.4"/>
+
+</android.support.constraint.ConstraintLayout>
